@@ -7,7 +7,7 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  array.reduce do |memo, call|
+  array.select do |memo, call|
     call.length > 4 || memo
     memo
   end
